@@ -6,29 +6,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { PropType, defineComponent } from "vue";
 import ProductItem from "./ProductItem.vue";
 import Product from "../../types/Product";
 export default defineComponent({
   components: { ProductItem },
-  setup() {
-    const products = ref<Product[]>([
-      {
-        title: "title1",
-        name: "name1",
-        description: "desc1",
-        price: 1,
-        id: 1,
-      },
-      {
-        title: "title2",
-        name: "name2",
-        description: "desc2",
-        price: 2,
-        id: 2,
-      },
-    ]);
-    return { products };
+  props: {
+    products: {
+      required: true,
+      type: Array as PropType<Product[]>,
+    },
   },
 });
 </script>
