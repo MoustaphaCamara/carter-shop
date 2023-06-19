@@ -1,9 +1,13 @@
 <template>
-  <div>
-    <h1>NavBar</h1>
-  </div>
+  <h1>NavBar</h1>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts">
+import { defineComponent } from "vue";
 
-<style scoped></style>
+export default defineComponent({
+  data() {
+    return {};
+  },
+});
+</script>
