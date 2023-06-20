@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h2 className="text-2xl text-blue-600 font-bold">Product List</h2>
-    <ProductItem :products="products" />
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <ProductItem :products="products" />
+    </div>
   </div>
 </template>
 

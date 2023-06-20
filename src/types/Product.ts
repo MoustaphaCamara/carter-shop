@@ -1,8 +1,8 @@
 interface Product {
-  title: string;
-  name: string;
   description: string;
-  price: number;
   id: number;
+  img: string;
+  price: number;
+  title: string;
 }
 export default Product;
